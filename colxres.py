@@ -16,9 +16,12 @@ import colorsys
 # Import colorz module to get dominant colors.
 from colorz import colorz
 
-wallpaper = '/home/omar/colorim/.wallpaper'
-colors = '/home/omar/colorim/.colors'
-xresources = '/home/omar/colorim/.Xresources'
+# Set your username
+USER = 'tom'
+
+wallpaper = '/home/'+USER+'/colorim/.wallpaper'
+colors = '/home/'+USER+'/colorim/.colors'
+xresources = '/home/'+USER+'/colorim/.Xresources'
 
 cols = ''
 xres = """
