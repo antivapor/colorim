@@ -12,20 +12,15 @@
 # Import required modules, sys (for file paths)
 import sys
 import colorsys
-import getpass
+import os
 
 # Import colorz module to get dominant colors.
 from colorz import colorz
 
-# Set your username
-# Manually
-#USER = 'tom'
-# Or automatically
-USER = getpass.getuser()
-print USER
-wallpaper = '/home/'+USER+'/colorim/.wallpaper'
-colors = '/home/'+USER+'/colorim/.colors'
-xresources = '/home/'+USER+'/colorim/.Xresources'
+DIR = os.getcwd()
+wallpaper = DIR+'/.wallpaper'
+colors = DIR+'/.colors'
+xresources = DIR+'/Xresources'
 
 cols = ''
 xres = """
